@@ -10,7 +10,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use('practicalmeteor:mocha');
+  api.use('practicalmeteor:mocha@2.0.1-rc0');
   api.use('mocha-tests');
   api.addFiles('mocha-tests.js', 'client');
 });
