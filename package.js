@@ -1,6 +1,6 @@
 Package.describe({
   name: "practicalmeteor:mocha-web-driver",
-  summary: "A meteor test-packages driver-package to run mocha.js tests using practicalmeteor:mocha",
+  summary: "Work in progress. A meteor test-packages driver-package to run mocha.js package tests using practicalmeteor:mocha",
   git: "https://github.com/practicalmeteor/meteor-mocha-web-driver.git",
   version: '0.9.0-rc0'
 });
@@ -14,11 +14,14 @@ Package.onUse(function (api) {
   api.use('session');
   api.use('reload');
 
+  // If we use a reactive reporter such as meteor's test-in-browser one,
+  // we'll need all of this.
   api.use(['blaze', 'templating', 'spacebars', 'ddp', 'tracker'], 'client');
 
-  api.use(['spacejamio:loglevel@1.1.0_2', 'spacejamio:chai']);
+  api.use(['spacejamio:loglevel@1.1.0_1', 'spacejamio:chai@1.9.2_2']);
 
-  api.addFiles('src/lib/log.js');
+  // Uncomment once we upgrade to loglevel v2, with package specific loggers
+  // api.addFiles('src/lib/log.js');
 
   api.addFiles([
     'src/client/mocha.css',
