@@ -1,6 +1,6 @@
 Package.describe({
   name: "practicalmeteor:mocha-web-driver",
-  summary: "Work in progress. A meteor test-packages driver-package to run mocha.js package tests using practicalmeteor:mocha",
+  summary: "Work in progress. A meteor test-packages driver-package to run practicalmeteor:mocha package tests",
   git: "https://github.com/practicalmeteor/meteor-mocha-web-driver.git",
   version: '0.9.0-rc0'
 });
