@@ -4,7 +4,7 @@
 
 Package.describe({
   name: "mike:pkgtest",
-  summary: "",
+  summary: "noop for now, eventually should probably handle reporting",
   git: "https://github.com/rissem/meteor-mocha-web-driver.git",
   version: '0.1.0'
 });
